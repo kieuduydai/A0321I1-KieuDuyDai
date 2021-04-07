@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐĂNG KÍ HỌC VIÊN</title>
+</head>
+<body>
+    <form action="tao_form_don_gian_2.html" method="get" style="font-family: 'Open Sans';background: yellow">
+        <fieldset>
+            <legend style="color: blue">ĐĂNG KÍ HỌC VIÊN</legend>
+            <label style="color: cadetblue">Họ và tên: <input type="text" name="yourname"></label><br><br>
+            <label style="color: cadetblue">Ngày sinh: <input type="date" name="birthday"></label><br><br>
+            <label style="color: cadetblue" >Giới tính:
+                <input type="radio" name="gioitinh" value="Nam">Nam
+                <input type="radio" name="gioitinh" value="Nu">Nu
+            </label><br><br>
+            <label style="color: cadetblue">Địa chỉ: <input type="text" name="diachi" ></label><br><br>
+            <label style="color: cadetblue">Lớp:
+                <form>
+                    <select name="lop" >
+                        <option>-chọn lớp-</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </form>
+            </label><br><br>
+            <label style="color: cadetblue">Email: <input type="text" name="email"></label><br><br>
+            <label style="color: cadetblue">Điện thoại: <input type="number" name="contact"></label><br><br>
+            <input type="submit" value="Đăng kí">
+            <input type="reset" value="Nhập lại">
+        </fieldset>
+    </form>
+</body>
+</html>

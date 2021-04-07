@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Form Đơn Giản</title>
+</head>
+<body>
+    <form action="tao_form_don_gian_1.html" method="get" style="background-color: aliceblue;font-family: 'Open Sans'" ">
+        <fieldset>
+            <legend style="color: darkorange" >Sở Thích Của Bạn</legend>
+            <label style="color: blue">Họ và tên: <input type="text"  name="yourname" ></label><br><br>
+            <label style="color: blue">Email: <input type="text"  name="email" ></label><br><br>
+            <form name="choice" action="tao_form_don_gian_1.html" style="color: blue">
+                <label style="color: blue ">Sở thích:</label><br/>
+                <label style="color: crimson"><input name="hobby" value="sport" type="checkbox"/> Thể thao</label>
+                <label style="color: crimson"><input name="hobby" value="music" type="checkbox"/> Âm nhạc</label>
+                <label style="color: crimson"><input name="hobby" value="reading" type="checkbox"/> Đọc sách</label><br><br>
+                <label style="color: crimson"><input name="hobby" value="web" type="checkbox"/> Lướt web</label>
+                <label style="color: crimson"><input name="hobby" value="game" type="checkbox"/> Chơi game</label>
+                <label style="color: crimson"><input name="hobby" value="film" type="checkbox"/> Xem phim</label><br><br>
+                <label style="color: crimson"><input name="hobby" value="tralve" type="checkbox"/> Du lịch</label><br><br>
+            </form>
+            <input type="submit" value="Gửi thông tin">
+            <input type="reset" value="Nhập lại">
+        </fieldset>
+    </form>
+</body>
+</html>
