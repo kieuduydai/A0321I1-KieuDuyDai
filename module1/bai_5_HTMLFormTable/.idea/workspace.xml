@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f61e11d1-85d7-43dd-8a45-801be0df9e1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_tap/tao_form_lay_surver_khach_hang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/tao_giao_dien_nguoi_dung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_co_ban.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_co_ban_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_nang_cao_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuc_hanh/tao_bang_co_ban.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuc_hanh/tao_bang_nang_cao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +48,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617793134995</updated>
-      <workItem from="1617793136120" duration="5403000" />
+      <workItem from="1617793136120" duration="7701000" />
+      <workItem from="1617927115709" duration="2574000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="500" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617803561819">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="500" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1617803561819" />
   </component>
 </project>
