@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f61e11d1-85d7-43dd-8a45-801be0df9e1d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_co_ban.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_co_ban_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_nang_cao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/tao_bang_nang_cao_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuc_hanh/tao_bang_co_ban.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuc_hanh/tao_bang_nang_cao.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +43,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617793134995</updated>
       <workItem from="1617793136120" duration="7701000" />
-      <workItem from="1617927115709" duration="2574000" />
+      <workItem from="1617927115709" duration="2980000" />
+      <workItem from="1617959283580" duration="64000" />
     </task>
     <servers />
   </component>
