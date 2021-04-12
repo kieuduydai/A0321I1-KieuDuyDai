@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let login = prompt("Enter string:");
+        if(login == 'Admin')
+        {
+            let pw = prompt("Enter password: ");
+            if(pw == 'TheMaster') document.writeln("Welcome.");
+            else if(pw = null) document.writeln("Canceled.");
+            else document.writeln("Wrong password.");
+        }
+        else if(login == null)
+            document.writeln("Canceled.");
+        else
+            document.writeln("I don’t know you.");
+    </script>
+</body>
+</html>
