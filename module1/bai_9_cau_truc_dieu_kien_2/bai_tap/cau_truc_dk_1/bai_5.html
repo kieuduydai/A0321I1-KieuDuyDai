@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập điểm giữa kì học sinh 1: " ));
+    let b = parseFloat(prompt("Nhập điểm cuối kì học sinh 1: " ));
+    let c = parseFloat(prompt("Nhập điểm giữa kì học sinh 2: " ));
+    let d = parseFloat(prompt("Nhập điểm cuối kì học sinh 2: " ));
+    let tk1 = 0.4*a + 0.6*b;
+    let tk2 = 0.4*c + 0.6*d;
+    if(tk1 >= 8)
+        document.writeln("học sinh 1 đạt học lực Giỏi");
+    else if(tk1 < 8 && tk1 > 6.5)
+        document.writeln("học sinh 1 đạt học lực Khá");
+    else if(tk1 < 6.5 && tk1 > 4)
+        document.writeln("học sinh 1 đạt học lực Trung bình");
+    else document.writeln("học sinh 1 đạt học lực Yếu");
+
+    if(tk2 >= 8)
+        document.writeln("<br>"+"học sinh 2 đạt học lực Giỏi");
+    else if(tk2 < 8 && tk2 > 6.5)
+        document.writeln("<br>"+"học sinh 2 đạt học lực Khá");
+    else if(tk2 < 6.5 && tk2 > 4)
+        document.writeln("<br>"+"học sinh 2 đạt học lực Trung bình");
+    else document.writeln("<br>"+"học sinh 2 đạt học lực Yếu");
+</script>
+</body>
+</html>
