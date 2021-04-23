@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập hệ số a:"));
+    let b = parseFloat(prompt("Nhập hệ số b:"));
+    let c = parseFloat(prompt("Nhập hệ số c:"));
+    if(a == 0)
+    {
+        if(b == 0 && c != 0)
+            alert("Phuong trinh vo nghiem");
+
+        else if(b==0&&c==0)
+            alert("Phuong trinh co vo so nghiem");
+
+        else
+        {
+            let x=-c/b;
+            alert("Phuong trinh co 1 nghiem x = " + x);
+    }
+    }
+    else
+    {
+        let delta = Math.pow(b,2)- 4*a*c ;
+        if(delta < 0)
+            alert("Phuong trinh vo nghiem");
+
+        else if(delta == 0)
+        {
+            let q=-b/(2*a);
+            alert("Phuong trinh co nghiem kep x1 = x2 = " + q);
+        }
+        else
+        {
+            let d=(-b-Math.sqrt(delta))/(2*a),m=(-b+Math.sqrt(delta))/(2*a);
+            alert("Phuong trinh co 2 nghiem phan biet");
+            alert("X1 = "+d);
+            alert("X2 = "+m);
+        }
+    }
+</script>
+</body>
+</html>
