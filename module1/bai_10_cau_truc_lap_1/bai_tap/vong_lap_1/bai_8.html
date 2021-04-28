@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Bài 8</title>
+    <style>
+        body
+        {
+            padding: 350px;
+        }
+    </style>
 </head>
 <body>
+<input type="button" onclick="play();" value="PLAY GAME">
 <script>
-    
+    // tạo số ngẫu nhiên
+    function TaoSoNgauNhien(min, max){
+        return Math.floor(Math.random() * (max - min)) + min;
+    }
+    function play() {
+        alert("Bạn được phép đoán 3 lần");
+        var a = parseInt(prompt("Nhập đầu mút trái: "));
+        var b = parseInt(prompt("Nhập đầu mút phải: "));
+        var dem = 0;
+        var soMay, soNguoi;
+        soMay = TaoSoNgauNhien(a, b); //Trả về một số ngẫu nhiên từ a đến b
+        while (true) {
+            soNguoi = parseInt(prompt("Nhập số muốn chọn trong khoảng từ " + a + "-->" + b + ":"));
+            dem++;
+            if (soNguoi == soMay) {
+                alert("Bạn đã thắng. Số máy chọn là: " + soMay);
+                alert("Nhấn PLAY GAME để chơi lại!");
+                if (d == 'k') break;
+            }
+            else if (soMay > soNguoi)
+                alert("Bạn đã nhập sai " + dem + " lần." + " Số máy chọn > Số bạn chọn");
+
+            else
+                alert("Bạn đã nhập sai " + dem + " lần." + " Số máy chọn < Số bạn chọn");
+
+            if (dem == 3) {
+                alert("Bạn đã thua. Nhấn PLAY GAME để chơi lại!");
+                if (c == 'k') break;
+            }
+        }
+}
 </script>
 </body>
 </html>
