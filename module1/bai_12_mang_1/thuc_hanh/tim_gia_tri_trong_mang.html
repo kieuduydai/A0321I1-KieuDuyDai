@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    let numbers = [-3, 5, 1, 3, 2, 10];
+    let value = prompt("Enter a number: ");
+    let check = false;
+    let vitri;
+    for(let i = 0; i <numbers.length; i++)
+    {
+        if(value == numbers[i])
+        {
+            check = true;
+            vitri = i;
+        }
+    }
+    if(!check)
+        document.writeln(value + " không có nằm trong mảng");
+    else document.writeln(value + " có nằm trong mảng "+ " và nằm ở vị trí thứ " + vitri);
+</script>
+</body>
+</html>
