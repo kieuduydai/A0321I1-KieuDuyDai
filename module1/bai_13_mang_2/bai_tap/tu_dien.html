@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<form>
+    <input type="text" id="nhap" value="Nhập tiếng anh">
+    <button onclick="timkiem();">Tìm kiếm</button>
+</form>
+<script>
+    let viet=["sách","bút mực","bút chì","bàn","ghế"];
+    let eng=["book","pen","pencil","table","chair"];
+
+    function timkiem() {
+        for(let i = 0; i < eng.length; i++)
+            if(document.getElementById("nhap").value === eng[i])
+                alert(viet[i]);
+        alert(viet[i]);
+    }
+</script>
+</body>
+</html>
