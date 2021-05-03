@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    var str = prompt("Nhập chuỗi:");
+    var result = [];
+
+    for(var i = 0; i < str.length; i++)
+    {
+        if(str[i] == str[i].toUpperCase())
+            result.push(str[i].toLowerCase());
+
+        else if(str[i] == str[i].toLowerCase())
+            result.push(str[i].toUpperCase());
+
+        else
+            result.push(str[i]);
+
+    }
+    document.writeln("Chuỗi gốc: "+str);
+    document.writeln("<br><br>"+"Chuỗi sau khi đổi: ");
+    document.writeln(result.join(''));
+</script>
+</body>
+</html>
