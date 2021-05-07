@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    // Viết chương trình khởi tạo/nhập vào 2 mảng số nguyên gồm 10 phần tử, gọi là mảng a và b.
+    //     Mảng c là một mảng được khai báo gồm 20 phần tử số nguyên.
+    //     Chương trình sẽ lưu các phần tử được nối từ hai mảng b và a vào mảng c.
+    //     Hiển thị mảng c.
+    let a = [10,-2,20,5,3,6,50,22,9,11];
+    let b = [1,-22,120,15,63,76,550,212,92,161];
+    let c = a.concat(b);
+
+    document.writeln("Mảng A đã tạo"+"<br>");
+    for (let i = 0; i < a.length; i++)
+        document.writeln(a[i]+",");
+    document.writeln("<br><br>"+"Mảng B đã tạo"+"<br>");
+    for (let i = 0; i < b.length; i++)
+        document.writeln(b[i]+",");
+    document.writeln("<br><br>"+"Mảng C được nối từ A và B"+"<br>");
+    document.writeln(c);
+</script>
+</body>
+</html>
