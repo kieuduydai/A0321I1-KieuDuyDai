@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Quản lý sản phẩm</h1>
+<input type="text" placeholder="Nhập tên sp" id="name">
+<input type="button" onclick="addNewProduct()" value="Add">
+<p>số lượng sản phẩm <span id="soluong"></span>
+<p id="show"></p>
+</body>
+</html>
+<script>
+let listProduct = ["iphone","nokia","samsung"];
+display(listProduct);
+// add vào list
+function addNewProduct() {
+    let newName = document.getElementById("name").value;
+    if(newName != "")
+        listProduct.push(newName);
+    else
+        alert("nhập tên sản phẩm");
+    document.getElementById("name").value = "";
+    display(listProduct);
+}
+// liệt kệ list
+function display(list) {
+    let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>\n' +
+            '        <th>Tên Sản Phẩm</th>\n' +
+            '        <th>Sửa</th>\n' +
+            '        <th>Xóa</th>\n' +
+            '    </tr>';
+    for (let i = 0 ; i < listProduct.length; i++)
+        {
+            tableString += '<tr>\n' +
+                '        <td>'+(i+1)+'</td>\n' +
+                '        <td>'+list[i]+'</td>\n' +
+                '        <td><input type="button" onclick="editProduct('+i+')" value="Sửa"></td>\n' +
+                '        <td><input type="button" onclick="deleteProduct('+i+')" value="Xóa"</td>\n' +
+                '    </tr>';
+        }
+    tableString += '<table>';
+    document.getElementById("show").innerHTML = tableString;
+    document.getElementById("soluong").innerHTML = list.length;
+    }
+// Xóa
+function deleteProduct(index) {
+    let conf = confirm("Bạn có muốn xóa sản phẩm"+ listProduct[index]);
+    let string = "sadsadsadsadsadsadsad";
+    if(conf)
+        listProduct.splice(index,1);
+    else string = '';
+    display(listProduct);
+}
+// Sửa
+function editProduct(index) {
+    let editName = prompt("nhập vào tên SP cần sửa");
+
+    if(editName != '' && editName != null)
+        listProduct[index] = editName;
+
+    display(listProduct);
+} 
+// Search
+function searchProduct() {
+
+}    
+</script>

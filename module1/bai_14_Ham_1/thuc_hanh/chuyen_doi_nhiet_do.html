@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+</head>
+<body>
+    <label>Fahrenheit <input type="number" value="1"
+    oninput="nhietDo(this.value)"
+    onchange="nhietDo(this.value)"></label>
+    <br><br>
+    <label id="show">Celcius: </label>
+</body>
+</html>
+<script>
+    function nhietDo(f) {
+        f = parseFloat(f);
+        document.getElementById("show").innerHTML = "Celcius: "+ (f - 32)/1.8 ;
+    }
+</script>
