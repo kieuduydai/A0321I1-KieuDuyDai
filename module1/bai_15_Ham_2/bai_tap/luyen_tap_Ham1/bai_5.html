@@ -16,20 +16,21 @@
     let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"];
     let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
     let tenNgoiSao = prompt("Nhập tên ngôi sao: ");
-    let ktra = true;
+    let ktra = false;
     let vitri;
     function check(arr) {
         for (let i = 0; i <arr1.length; i++)
             if(arr == arr1[i]) {
                 let j = arr1.indexOf(tenNgoiSao);
                 vitri = j;
-                return ktra;
+                ktra = true;
             }
+        if(ktra)
+            document.writeln(arr2[vitri]);
+        else
+            alert("không tìm thấy tên ngôi sao");
     }
     check(tenNgoiSao);
-    if(ktra)
-        document.writeln(arr2[vitri]);
-    else document.writeln("không tìm thấy");
 </script>
 </body>
 </html>

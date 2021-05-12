@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    // Viết hàm tính diện tích, hàm tính chu vi hình tròn.
+    let r = parseInt(prompt("mời nhập bán kính"));
+
+    function dt() {
+      return Math.PI*r*r;
+    }
+
+    function cv(){
+      return 2*r*Math.PI;;
+    }
+    document.writeln("diện tích hình tròn bằng "+ dt().toFixed(2));
+
+    document.writeln("<br>"+"chu vi hình tròn bằng "+ cv().toFixed(2));
+</script>
+</body>
+</html>

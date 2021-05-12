@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    // giai thừa
+    let n = parseInt(prompt("Nhập n: "));
+    function giaiThua(n) {
+        if (n == 1)
+            return 1;
+        return n * giaiThua(n - 1);
+    }
+    document.writeln(giaiThua(n)+"!");
+</script>
+</body>
+</html>
