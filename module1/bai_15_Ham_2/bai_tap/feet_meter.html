@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f = parseFloat(prompt("Feet: "));
+    let m = parseFloat(prompt("Meter: "));
+
+    document.writeln(f+" feet"+"<br>");
+    document.writeln("Feet --> Meter: ");
+    document.writeln(feetToMeter(f));
+    function feetToMeter(foot){
+        return 0.305 * foot;
+    }
+
+    document.writeln("<br>"+m+" meter"+"<br>");
+    document.writeln("Meter --> Feet: ");
+    document.writeln(meterToFeet(m));
+    function meterToFeet(meter){
+        return  3.279 * meter;
+    }
+
+
+</script>
+</body>
+</html>
