@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<body>
+<script>
+    class Date {
+        constructor(day, month, year) {
+            this.day = parseInt(day);
+            this.month = parseInt(month);
+            this.year = parseInt(year);
+        }
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(day) {
+            return this.day  = day;
+        }
+
+        setMonth(month) {
+            return this.month  = month;
+        }
+
+        setYear(year) {
+            return this.year  = year;
+        }
+        setDate(){
+            this.day  = 1;
+            this.month  = 1;
+            this.year  = 2000;
+        }
+
+    }
+    let obj = new Date(2,2,2018);
+    document.writeln(obj.getDay());
+    document.writeln(obj.getMonth());
+    document.writeln(obj.getYear());
+    let day = obj.setDay(10);
+    let month = obj.setMonth(10);
+    let year = obj.setYear(2019);
+    document.writeln("<br>"+"Sau khi get"+"<br>");
+    document.writeln(day+"/"+month+"/"+year+"<br>");
+    document.writeln("Thiết lập lại ngày"+"<br>");
+    document.writeln(obj.setDate());
+</script>
+</body>
+</html>

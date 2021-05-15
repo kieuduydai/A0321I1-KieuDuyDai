@@ -7,10 +7,10 @@
 <body>
 <script>
     // Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
-    function swap() {
-        let temp = a;
-        a = b;
-        b = temp;
+    function swap() { // e chịu
+        a += b;
+        b = a - b;
+        a -= b;
     }
     let a = parseInt(prompt("a:"));
     let b = parseInt(prompt("b:"));

@@ -13,9 +13,9 @@
     let c = prompt("Nhập một ký tự:");
     let ktra = false;
     let count = 0;
-    function check() {
-        for (let i = 0;i < arr.length;i++){
-            if (c === arr[i]){
+    function check(char,array) {
+        for (let i = 0;i < array.length;i++){
+            if (char === arr[i]){
                 count++;
                 ktra = true;
             }
@@ -23,7 +23,7 @@
         if(ktra) document.write(c+" có "+count+ " lần xuất hiện trong mảng");
         else alert(-1);
     }
-    check();
+    check(c,arr);
 </script>
 </body>
 </html>
