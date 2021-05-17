@@ -35,10 +35,13 @@
         setYear(year) {
             return this.year  = year;
         }
-        setDate(){
-            this.day  = 1;
-            this.month  = 1;
-            this.year  = 2000;
+        setDate(ngay,thang,nam){
+            this.day  = ngay;
+            this.month  = thang;
+            this.year  = nam;
+        }
+        toString(){
+            return this.day+"/"+this.month+"/"+this.year;
         }
 
     }
@@ -52,7 +55,8 @@
     document.writeln("<br>"+"Sau khi get"+"<br>");
     document.writeln(day+"/"+month+"/"+year+"<br>");
     document.writeln("Thiết lập lại ngày"+"<br>");
-    document.writeln(obj.setDate());
+    obj.setDate(2,3,2004);
+    document.writeln(obj.toString()) ;
 </script>
 </body>
 </html>
