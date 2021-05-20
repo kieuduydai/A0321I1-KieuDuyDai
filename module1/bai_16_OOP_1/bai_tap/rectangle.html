@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="500" style="border: 1px solid black" >
+<script>
+    class rectangle {
+        constructor(dai,rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        getDT () {
+            return this.dai*this.rong;
+        }
+        getCV () {
+            return (this.dai+this.rong)*2;
+        }
+        change (cd,cr){
+            this.dai = cd;
+            this.rong = cr;
+        }
+        getCd() {
+            return this.dai;
+        }
+        getCr() {
+            return this.rong;
+        }
+
+    }
+    let cd = parseInt(prompt("Nhập chiều dài:"));
+    let cr = parseInt(prompt("Nhập chiều rộng:"));
+    let obj = new rectangle(cd,cr);
+    alert("dien tich: "+ obj.getDT()+" chu vi: "+obj.getCV());
+    // thay đổi cd, cr
+    obj.change(200,100);
+    alert("Chieu dai va chieu rong sau khi thay doi: "+obj.getCd()+","+obj.getCr());
+    alert("dien tich sau khi thay doi: "+ obj.getDT()+" chu vi sau khi thay doi: "+obj.getCV());
+    function draw() {
+        let myCanvas = document.getElementById("myCanvas");
+        let x = myCanvas.getContext("2d");
+        x.fillStyle = "#FECE45";
+        x.fillRect(50,100,obj.getCd(),obj.getCr());
+    }
+    draw();
+</script>
+</body>
+</html>

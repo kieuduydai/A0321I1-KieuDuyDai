@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    class temperature {
+        constructor() {
+            this.c = c;
+        }
+        getF() {
+            return  parseFloat(9/5 * this.c + 32);
+        }
+        getKevin() {
+            return parseFloat(this.c + 273);
+
+        }
+        setC(c1) {
+            return this.c = c1;
+        }
+    }
+    let c = parseInt(prompt("Nhập độ c: "));
+    let obj = new temperature(c);
+    alert("từ độ c qua độ f là: "+ obj.getF());
+    alert("từ độ c qua độ kevin là: "+ obj.getKevin());
+    obj.setC(25);
+    alert("từ 25 độ c qua độ f là: "+ obj.getF());
+    alert("từ 25 độ c qua độ kevin là: "+ obj.getKevin());
+</script>
+</body>
+</html>
