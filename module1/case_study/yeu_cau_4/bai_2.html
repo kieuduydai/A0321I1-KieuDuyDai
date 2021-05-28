@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài 2</title>
 </head>
 <body>
-
+<script>
+    let str = prompt("Hãy nhập chuỗi: ");
+    let temp = [];
+    let strArr = str.split('');
+    function differentSymbolsNaive(s) {
+        s.map(difference => {
+            if (!temp.includes(difference))
+                temp.push(difference)
+        })
+        return temp;
+    }
+    document.writeln(str+"<br>");
+    document.writeln("Số kí tự khác nhau là "+differentSymbolsNaive(strArr).length);
+</script>
 </body>
 </html>

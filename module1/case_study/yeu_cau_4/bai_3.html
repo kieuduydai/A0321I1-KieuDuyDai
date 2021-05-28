@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Bài 3</title>
 </head>
 <body>
-
+<script>
+    let count = 0;
+    let str1 = prompt("Chuỗi 1:");
+    let str2 = prompt("Chuỗi 2:");
+    str1 = str1.split('');
+    str2 = str2.split('');
+    function commonCharacterCount(s1, s2)
+    {
+        s1.map(index =>
+        {
+            if (s2.includes(index))
+            {
+                s2.splice(s2.indexOf(index), 1);
+                count++;
+            }
+        })
+        return count;
+    }
+    document.writeln("Số kí tự chung là: "+ commonCharacterCount(str1,str2));
+</script>
 </body>
 </html>
