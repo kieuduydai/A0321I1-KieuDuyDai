@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân đặc</title>
+</head>
+<body>
+<script>
+    let n = 5,q = 0;
+    while(n > 0) {
+        for (let i = 1; i < n; i++)
+            document.writeln("&nbsp&nbsp");
+        for (let j = 0; j <= q; j++)
+            document.writeln("*");
+        n -- ;
+        q += 2 ;
+        document.writeln("<br>");
+    }
+</script>
+</body>
+</html>

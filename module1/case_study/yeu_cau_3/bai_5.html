@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let choice;
+    let donGia = 0;
+    let soLuong = 0;
+    let tongTien = 0;
+    while (true) {
+        choice = parseInt(prompt("1. Cafe(10000 VND) \n 2. Cam vắt(20000 VND) \n 3. Nước ép cà rốt(20000 VND) \n 4. Nước ép cà chua(25000 VND) \n 5. Nước lọc(5000 VND) \n 6. Nước dừa(30000 VND) \n 7. Kết thúc"));
+        switch (choice) {
+            case 1:
+                donGia = 10000;
+                soLuong = parseInt(prompt("Nhâp số lượng: "));
+                tongTien += soLuong * donGia;
+                document.write("Tổng tiền Cafe:  " + tongTien);
+                break;
+            case 2:
+                donGia = 20000;
+                soLuong = parseInt(prompt("Nhâp số lượng: "));
+                tongTien += soLuong * donGia;
+                document.write("<br>"+"Tổng tiền Cam vắt:  " + tongTien);
+                break;
+            case 3:
+                donGia = 20000;
+                soLuong = parseInt(prompt("Nhâp số lượng: "));
+                tongTien += soLuong * donGia;
+                document.write("<br>"+"Tổng tiền Nước ép cà rốt:  " + tongTien);
+                break;
+            case 4:
+                donGia = 25000;
+                soLuong = parseInt(prompt("Nhâp số lượng: "));
+                tongTien += soLuong * donGia;
+                document.write("<br>"+"Tổng tiền Nước ép cà chua:  " + tongTien);
+                break;
+            case 5:
+                donGia = 5000;
+                soLuong = parseInt(prompt("Nhâp số lượng: "));
+                tongTien += soLuong * donGia;
+                document.write("<br>"+"Tổng tiền Nước lọc:  " + tongTien);
+                break;
+            case 6:
+                donGia = 30000;
+                soLuong = parseInt(prompt("Nhâp số lượng: "));
+                tongTien += soLuong * donGia;
+                document.write("<br>"+"Tổng tiền Nước dừa:  " + tongTien);
+                break;
+            case 7:
+                ondragexit(1);
+                break;
+        }
+    }
+</script>
+</body>
+</html>

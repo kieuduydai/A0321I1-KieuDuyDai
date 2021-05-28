@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân rỗng</title>
+</head>
+<body>
+<script>
+    let h = 5;
+   for(let i = h; i > 0; i--){
+        for (let j = 1; j < i; j++)
+            document.writeln("&nbsp&nbsp");
+        for (let k = 1; k <= (2*(h-1)+1); k++)
+            if ( (k == 1) || (k == (2*(h-i)+1)) || (i == 1))
+                document.writeln("*");
+            else
+                document.writeln("&nbsp&nbsp");
+        document.writeln("<br>");
+    }
+</script>
+</body>
+</html>

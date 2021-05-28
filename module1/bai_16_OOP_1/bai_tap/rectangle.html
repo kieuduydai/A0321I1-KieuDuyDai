@@ -7,7 +7,7 @@
 <body>
 <canvas id="myCanvas" width="1000" height="500" style="border: 1px solid black" >
 <script>
-    class rectangle {
+    class recTangle {
         constructor(dai,rong) {
             this.dai = dai;
             this.rong = rong;
@@ -28,23 +28,23 @@
         getCr() {
             return this.rong;
         }
+        draw(){
+            let myCanvas = document.getElementById("myCanvas");
+            let x = myCanvas.getContext("2d");
+            x.fillStyle = "#FECE45";
+            x.fillRect(50,100,obj.getCd(),obj.getCr());
+        }
 
     }
     let cd = parseInt(prompt("Nhập chiều dài:"));
     let cr = parseInt(prompt("Nhập chiều rộng:"));
-    let obj = new rectangle(cd,cr);
+    let obj = new recTangle(cd,cr);
     alert("dien tich: "+ obj.getDT()+" chu vi: "+obj.getCV());
     // thay đổi cd, cr
     obj.change(200,100);
     alert("Chieu dai va chieu rong sau khi thay doi: "+obj.getCd()+","+obj.getCr());
     alert("dien tich sau khi thay doi: "+ obj.getDT()+" chu vi sau khi thay doi: "+obj.getCV());
-    function draw() {
-        let myCanvas = document.getElementById("myCanvas");
-        let x = myCanvas.getContext("2d");
-        x.fillStyle = "#FECE45";
-        x.fillRect(50,100,obj.getCd(),obj.getCr());
-    }
-    draw();
+    obj.draw();
 </script>
 </body>
 </html>

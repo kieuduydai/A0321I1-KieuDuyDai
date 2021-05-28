@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let a = [1,2,3];
+    let b = new Array();
+    for(let i = 1;i < a.length; i++) {
+        b[0] = a[0];
+        for (let j = 1; j < a.length; j++)
+            b[i] = b[i-1] + a[i];
+    }
+    document.writeln("Mảng a là: "+a+"<br>");
+    document.writeln("Mảng prefixSums(a) là: "+b);
+
+</script>
+</body>
+</html>
