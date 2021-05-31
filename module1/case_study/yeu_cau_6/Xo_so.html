@@ -6,7 +6,8 @@
 </head>
 <body>
 <h1 style="color: yellow">Xổ Số</h1>
-<p>Bạn có tin mình là người may mắn không?</p>
+<p>Bạn có tin mình là người may mắn không?
+ (Hãy bấm mua vé)</p>
 <input type="button" value="Mua Vé" onclick="chonXoSo()">
 <input type="button" value="Xem Kết Quả" onclick="ketqua()">
 <input type="button" value="Mua vé ngẫu nhiên" onclick="ramdom()" >
@@ -127,7 +128,6 @@
         }
         danhsach6 += '</select>';
         document.getElementById("display6").innerHTML = danhsach6;
-        // count++;
     }
     function ketqua()
     {
@@ -173,39 +173,24 @@
         }
     }
     function ramdom() {
-        count++;
-        console.log(count);
         if (count > 4)
-            alert("Bạn đã mua quá 4 lần")
+            alert("Bạn đã mua quá 4 lần");
 
         else
-        {
-            if (check)
             {
-                let a = Math.floor(Math.random() * "99") ;
-                let b = Math.floor(Math.random() * "99") ;
-                let c = Math.floor(Math.random() * "99") ;
-                let d = Math.floor(Math.random() * "99") ;
-                let e = Math.floor(Math.random() * "99") ;
-                let f = Math.floor(Math.random() * "99") ;
-                alert("Vé ngẫu nhiên bạn đã mua là : "+a+" "+b+" "+c+" "+d+" "+e+" "+f);
+            macdinh.setSo1(Math.floor(Math.random() * "99"));
+            macdinh.setSo2(Math.floor(Math.random() * "99"));
+            macdinh.setSo3(Math.floor(Math.random() * "99"));
+            macdinh.setSo4(Math.floor(Math.random() * "99"));
+            macdinh.setSo5(Math.floor(Math.random() * "99"));
+            macdinh.setSo6(Math.floor(Math.random() * "99"));
 
-                if (a === chienthang[0] && b === chienthang[1] && c === chienthang[2] && d === chienthang[3] && e === chienthang[4] && f === chienthang[5])
-                    alert("Chúc Mừng bạn đã trúng Giải Nhất +10.000.000VND");
-
-                else
-                {
-                    if (c === chienthang[2] && d === chienthang[3] && e === chienthang[4] && f === chienthang[5])
-                        alert("Chúc Mừng bạn đã trúng Giải Nhì +5.000.000VND");
-
-                    if (e === chienthang[4] && f === chienthang[5])
-                        alert("Chúc Mừng bạn đã trúng Giải Ba +1.000.000VND");
-
-                    else
-                        alert("Chúc bạn may mắn lần sau");
-
-                }
-            }
+            document.getElementById("1").value = macdinh.getSo1();
+            document.getElementById("2").value = macdinh.getSo2();
+            document.getElementById("3").value = macdinh.getSo3();
+            document.getElementById("4").value = macdinh.getSo4();
+            document.getElementById("5").value = macdinh.getSo5();
+            document.getElementById("6").value = macdinh.getSo6();
         }
     }
 </script>
