@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+    <style>
+        h2{
+            display: inline;
+            margin-left: 550px;
+        }
+        div,td{
+            margin: 30px;
+        }
+        table{
+            margin-left: 450px;
+        }
+
+    </style>
+</head>
+<body>
+<h2>Quản lí công nhân </h2>
+<p id="ketQua"></p>
+<script>
+    class Student {
+        constructor(name, age, dc, luong, chucVu) {
+            this.name = name;
+            this.age = age;
+            this.dc = dc;
+            this.luong = luong;
+            this.chucVu = chucVu;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getAge() {
+            return this.age;
+        }
+
+        getDc() {
+            return this.dc;
+        }
+
+        getLuong() {
+            return this.luong;
+        }
+
+        getChucVu() {
+            return this.chucVu;
+        }
+
+    }
+
+    let listStudent = [];
+    listStudent.push(new Student("Trương Tấn A", "11-11-1997", "Quảng Nam", 2000, "Abc"));
+    listStudent.push(new Student("Trương Tấn b", "11-11-1998","Đà Nẵng", 2000, "Abc"));
+    listStudent.push(new Student("Trương Tấn c", "11-11-1999","Huế", 2000, "Abc"));
+    display(listStudent);
+
+
+    function display(list) {
+        let tableString = '<table border="1">\n' +
+            '    <tr style="background: gray">\n' +
+            '        <td>STT</td>\n' +
+            '        <td>Họ và tên</td>\n' +
+            '        <td>Ngày sinh</td>\n' +
+            '        <td>Địa chỉ</td>\n  ' +
+            '         <td>Lương</td>\n'   +
+            '         <td>Chức vụ</td>\n'
+        '    </tr>';
+
+        for (let i = 0; i < list.length; i++) {
+            tableString += ' <tr>\n' +
+                '        <td>' + (1 + i) + '</td>\n' +
+                '        <td>' + list[i].getName() + '</td>\n' +
+                '        <td>' + list[i].getAge() + '</td>\n' +
+                '        <td>' + list[i].getDc() + '</td>\n' +
+                '        <td>' + list[i].getLuong() + '</td>\n' +
+                '        <td>' + list[i].getChucVu() + '</td>\n'
+                '    </tr>';
+        }
+        tableString += "</table>";
+        document.getElementById("ketQua").innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

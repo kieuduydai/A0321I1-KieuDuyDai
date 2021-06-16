@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let t,year;
+    t = parseInt(prompt("Nhập tháng :"));
+
+    while(t < 1 || t > 12)
+    {
+        if (t < 1 || t > 12)
+            alert("Bạn đã nhập sai tháng, hãy nhập lại");
+        t = parseInt(prompt("Nhập tháng :"));
+    }
+
+    year = parseInt(prompt("Nhập năm :"));
+
+    function tinhNgay(t)
+    {
+        switch (t)
+        {
+            case 4 :case 6 :case 9 :case 11 :
+            alert('tháng ' + t + " năm "+ year +" có 30 ngày");
+            break;
+
+            case 1 : case 3 :case 5 :case 7 :case 8 :case 10 :case 12:
+            alert('tháng ' + t + " năm "+ year +" có 31 ngày");
+            break;
+
+        }
+        if(t == 2)
+        {
+            if(year %4 == 0 && year %100 != 0)
+                alert("Tháng 2 năm "+ year + " có 29 ngày");
+            else
+                alert("Tháng 2 năm "+ year + " có 28 ngày");
+        }
+    }
+
+    tinhNgay(t);
+</script>
+</body>
+</html>

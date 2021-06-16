@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Nhập số phần tử không quá 50 !"));
+    while(n > 50 || n <= 0) {
+        if(n > 50 || n <= 0) alert("số phẩn tử quá giới hạn hoặc không hợp lệ");
+        n = parseInt(prompt("Nhập số phần tử không quá 50 !"));
+    }
+
+    let arr = new Array(n);
+
+    //nhập mảng
+    for(let i = 0; i < n ;i++)
+        arr[i] = parseInt(prompt("arr["+i+"] "));
+
+    //xuất mảng
+    document.writeln("Mảng đã nhập là:"+"<br>");
+    for(let i = 0; i < n ;i++)
+        document.writeln(arr[i]+",");
+
+    //tbc các số chia hết cho 3
+    let sum = 0;
+    let value = 0;
+    document.writeln("<br>"+"Số trong mảng chia hết cho 3 là:"+"<br>");
+    for(let i = 0; i < n ;i++){
+        if(arr[i]%3 == 0) {
+            document.writeln(arr[i] + ",");
+            sum += arr[i];
+            value++;
+        }
+    }
+    document.writeln("<br>"+"Trung bình cộng các số đó: "+ sum/value);
+
+
+
+</script>
+</body>
+</html>
