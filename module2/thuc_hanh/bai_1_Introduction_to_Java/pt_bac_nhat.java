@@ -1,4 +1,4 @@
-package thuc_hanh;
+package bai_1_Introduction_to_Java;
 import java.util.Scanner;
 public class pt_bac_nhat {
 	public static void main(String[] args) {
@@ -31,5 +31,4 @@ public class pt_bac_nhat {
 		      System.out.print("Vo nghiem!");    
 		}
 	}
-
 }

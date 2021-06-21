@@ -1,4 +1,4 @@
-package thuc_hanh;
+package bai_1_Introduction_to_Java;
 import java.util.Scanner;
 public class so_ngay_trong_thang {
 	public static void main(String[] args) {
@@ -24,5 +24,4 @@ public class so_ngay_trong_thang {
 				System.out.println("tháng "+a+" Có 30 ngày");
 		}
 	}
-
 }
