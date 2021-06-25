@@ -52,6 +52,5 @@ public class max_2_chieu {
 	    
 	    System.out.println("Phan tu lon nhat: "+ max(a, row, col));
 	    
-		
 	}
 }
