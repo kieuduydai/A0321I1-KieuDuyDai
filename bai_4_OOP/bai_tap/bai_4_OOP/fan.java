@@ -5,10 +5,10 @@ public class fan {
 	final private int medium = 2;
 	final private int fast   = 3;
 	
-	int     speed = slow;
-	boolean on = false;
+	int     speed  = slow;
+	boolean on     = false;
     double  radius = 5;
-    String color = "Xanh";
+    String  color  = "Xanh";
     
 	
     public fan() {

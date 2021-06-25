@@ -23,6 +23,7 @@ public class main_pt_bac_2 {
 			System.out.print("x1 = "+obj.getRoot1());
 			System.out.print("\nx2 = "+obj.getRoot2());
 		}
+		
 			
 	}
 }
