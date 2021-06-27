@@ -1,19 +1,20 @@
 package bai_3_mang;
 import java.util.Scanner;
-public class dao_nguoc {
+
+public class Inverse {
 	public static void ramdom(int a[],int n) {
 		int i;
 		for(i = 0; i < n; i++)
 			a[i] = (int) (Math.random() * 100);
 	}
 	
-	public static void out(int a[],int n) {
+	public static void disPlay(int a[],int n) {
 		int i;
 		for(i = 0; i < n; i++)
 			System.out.print(a[i]+" ");
 	}
 	
-	public static void daoDay(int a[],int n) {
+	public static void inverse(int a[],int n) {
 		int i;
 		for(i = n-1 ; i >= 0; i--)
 			System.out.print(a[i]+" ");
@@ -28,9 +29,9 @@ public class dao_nguoc {
 		
 		System.out.print("Mang ramdom la\n");
 		ramdom(a, n);
-		out(a, n);
+		disPlay(a, n);
 		System.out.print("\nMang dao nguoc\n");
-		daoDay(a, n);
+		inverse(a, n);
 		
 }
 }

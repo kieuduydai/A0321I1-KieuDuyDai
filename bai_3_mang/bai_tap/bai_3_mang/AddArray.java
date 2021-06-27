@@ -1,6 +1,6 @@
 package bai_3_mang;
 import java.util.Scanner;
-public class gop_mang {
+public class AddArray {
 	public static Scanner sc = new Scanner(System.in);
 	
 	public static void ramdom(int a[],int n) {
@@ -10,14 +10,14 @@ public class gop_mang {
 			a[i] = (int) (Math.random() * 100);
 	}
 	
-	public static void out(int a[],int n) {
+	public static void disPlay(int a[],int n) {
 		
 		int i;
 		for(i = 0; i < n; i++)
 			System.out.print(a[i]+" ");
 	}
 	
-	public static int [] gopMang(int a[], int b[]) {
+	public static int [] addArray(int a[], int b[]) {
 		
 		int []c = new int [a.length+b.length];
 		
@@ -45,13 +45,14 @@ public class gop_mang {
 		
 		System.out.print("Mang A: ");
 		ramdom(a, n);
-		out(a,n);
+		disPlay(a, n);
 		
 		System.out.print("\nMang B: ");
 		ramdom(b,m);
-		out(b,m);
+		disPlay(b, n);
 		
 		System.out.print("\nMang sau khi gop: ");
-		out(gopMang(a, b),n+m);
+		disPlay(addArray(a, b),n+m);
 	}
 }
+

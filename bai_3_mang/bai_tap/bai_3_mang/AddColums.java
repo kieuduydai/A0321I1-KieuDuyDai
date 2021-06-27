@@ -1,9 +1,11 @@
 package bai_3_mang;
+
 import java.util.Scanner;
 
-public class min {
+public class AddColums {
 	public static Scanner sc = new Scanner(System.in);
-	public static void ramdom2Chieu(int a[][],int row, int col ) {
+	
+	public static void ramdomArray2d(int a[][],int row, int col ) {
 		
 		for (int i = 0; i < row; i++) {
 	        for (int j = 0; j < col; j++) {
@@ -12,7 +14,7 @@ public class min {
 	    }
 	}
 	
-	public static void out(int a[][],int row, int col ) {
+	public static void disPlay(int a[][],int row, int col ) {
 		
 		for (int i = 0; i < row; i++) {
 	        for (int j = 0; j < col; j++) 
@@ -23,15 +25,13 @@ public class min {
 		
 	}
 	
-	public static int min(int a[][],int row,int col) {
-		int min = a[0][0];
+	public static int sumCol(int a[][],int col,int k) {
+		int sum = 0;
 		
-		for(int i = 1 ; i < row ; i++)
-			for(int j = 1; j < col ; j++)
-				if(min>a[i][j]) 
-					min = a[i][j];
+		for(int i = 0 ; i < col ; i++)
+			sum += a[i][k];
 		
-		return min;	
+		return sum;	
 	}
 	
 	
@@ -46,11 +46,21 @@ public class min {
 	         
 	    int[][] a = new int[row][col];
 	   
-	    ramdom2Chieu(a, row, col);
+	    ramdomArray2d(a, row, col);
 	    System.out.println("Ma tran ngau nhien ");
-	    out(a, row, col);
+	    disPlay(a, row, col);
 	    
-	    System.out.println("Phan tu nho nhat: "+ min(a, row, col));
+	    
+	    int k;
+	    do {
+	    	System.out.print("Nhap cot muon tinh tong: ");
+		    k = sc.nextInt();
+		    if (k >= col) 
+		    	System.out.print("Khong hop le!\n");
+	    }while (k >= col);
+	    
+	    
+	    System.out.println("Tong phan tu cua cot "+k+" la: " + sumCol(a, col, k));
 	    
 		
 	}

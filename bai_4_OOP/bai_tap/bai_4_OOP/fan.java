@@ -1,6 +1,6 @@
 package bai_4_OOP;
 
-public class fan {
+public class Fan {
 	final private int slow   = 1;
 	final private int medium = 2;
 	final private int fast   = 3;
@@ -11,7 +11,7 @@ public class fan {
     String  color  = "Xanh";
     
 	
-    public fan() {
+    public Fan() {
 	}
     
     public int getSpeed() {
@@ -54,5 +54,19 @@ public class fan {
             return "Quat tat " + ".Ban kinh cua canh quat: " + radius + " .Co mau:"
             		+ " " + color;
     }
+    
+    public static void main(String[] args) {
+		Fan fan1 = new Fan();
+        fan1.setSpeed(3);
+        fan1.setRadius(10);
+        fan1.setColor("Do");
+        fan1.setOn(true);
+        System.out.println(fan1.toString());
+        
+        Fan fan2 = new Fan();
+        fan2.setSpeed(2);
+        fan2.setRadius(5);
+        System.out.println(fan2.toString());
+}
     
 }

@@ -1,9 +1,10 @@
 package bai_3_mang;
 import java.util.Scanner;
 
-public class tong_duong_cheo_chinh {
+public class SumMainCross {
 	public static Scanner sc = new Scanner(System.in);
-	public static void ramdom2Chieu(int a[][],int n ) {
+	
+	public static void ramdomArray2d(int a[][],int n ) {
 		
 		for (int i = 0; i < n; i++) {
 	        for (int j = 0; j < n; j++) {
@@ -12,7 +13,7 @@ public class tong_duong_cheo_chinh {
 	    }
 	}
 	
-	public static void out(int a[][],int n ) {
+	public static void disPlay(int a[][],int n ) {
 		
 		for (int i = 0; i < n; i++) {
 	        for (int j = 0; j < n; j++) 
@@ -23,7 +24,7 @@ public class tong_duong_cheo_chinh {
 		
 	}
 	
-	public static int tongDCheo(int a[][],int n) {
+	public static int sumMainCross(int a[][],int n) {
 		int sum = a[0][0];
 		
 		for(int i = 1 ; i < n ; i++)
@@ -45,11 +46,11 @@ public class tong_duong_cheo_chinh {
 	         
 	    int[][] a = new int[n][n];
 	   
-	    ramdom2Chieu(a,n);
+	    ramdomArray2d(a,n);
 	    System.out.println("Ma tran ngau nhien ");
-	    out(a, n);
+	    disPlay(a, n);
 	    
-	    System.out.println("Tong duong cheo chinh la: "+ tongDCheo(a, n));
+	    System.out.println("Tong duong cheo chinh la: "+ sumMainCross(a, n));
 	    
 		
 	}

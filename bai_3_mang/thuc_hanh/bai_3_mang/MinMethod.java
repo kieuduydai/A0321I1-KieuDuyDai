@@ -1,6 +1,6 @@
 package bai_3_mang;
 
-public class min_su_dung_phuong_thuc {
+public class MinMethod {
 	public static int minValue(int[] a){
 		int i,min = a[0];
 		for(i = 1; i < a.length; i++)

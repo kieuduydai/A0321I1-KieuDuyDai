@@ -1,7 +1,8 @@
 package bai_3_mang;
 import java.util.Scanner;
 
-public class dem_so_luong_sinh_vien {
+public class CountArray {
+	
 	public static void main(String[] args) {
 		System.out.println("The Application to count the number of students pass.");
 

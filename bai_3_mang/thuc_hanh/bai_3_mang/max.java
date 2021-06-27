@@ -1,5 +1,4 @@
 package bai_3_mang;
-
 import java.util.Scanner;
 
 public class max {

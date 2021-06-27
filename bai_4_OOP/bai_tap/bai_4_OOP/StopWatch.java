@@ -2,10 +2,10 @@ package bai_4_OOP;
 
 import java.util.Arrays;
 
-public class stop_watch {
+public class StopWatch {
 	private long starTime,endTime;
     
-	public stop_watch() {
+	public StopWatch() {
     }
 	
     public void start() {
@@ -21,7 +21,7 @@ public class stop_watch {
     }
 
     public static void main(String[] args) {
-        stop_watch stopWatch = new stop_watch();
+        StopWatch stopWatch = new StopWatch();
         
         int[] array = new int[1000000];
         

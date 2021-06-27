@@ -1,6 +1,8 @@
 package bai_3_mang;
 import java.util.Scanner;
-public class chuyen_doi_nhiet_do {
+
+public class TemperatureSwitch {
+	
 	public static double celsiusToFahrenheit(double celsius) {
 	     double fahrenheit = (9.0 / 5) * celsius + 32;
 	     return fahrenheit;

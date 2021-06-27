@@ -1,10 +1,9 @@
 package bai_3_mang;
-
 import java.util.Scanner;
 
-public class tinh_tong_cac_so_o_1_cot_xac_dinh {
+public class FindMaxArray2d {
 	public static Scanner sc = new Scanner(System.in);
-	public static void ramdom2Chieu(int a[][],int row, int col ) {
+	public static void ramdomArray2d(int a[][],int row, int col ) {
 		
 		for (int i = 0; i < row; i++) {
 	        for (int j = 0; j < col; j++) {
@@ -13,7 +12,7 @@ public class tinh_tong_cac_so_o_1_cot_xac_dinh {
 	    }
 	}
 	
-	public static void out(int a[][],int row, int col ) {
+	public static void disPlay(int a[][],int row, int col ) {
 		
 		for (int i = 0; i < row; i++) {
 	        for (int j = 0; j < col; j++) 
@@ -24,13 +23,15 @@ public class tinh_tong_cac_so_o_1_cot_xac_dinh {
 		
 	}
 	
-	public static int tong(int a[][],int row,int col) {
-		int sum = 0;
+	public static int max(int a[][],int row,int col) {
+		int max = a[0][0];
 		
-		for(int i = 0 ; i < col ; i++)
-			sum += a[i][row];
+		for(int i = 1 ; i < row ; i++)
+			for(int j = 1; j < col ; j++)
+				if(max<a[i][j]) 
+					max = a[i][j];
 		
-		return sum;	
+		return max;	
 	}
 	
 	
@@ -45,22 +46,11 @@ public class tinh_tong_cac_so_o_1_cot_xac_dinh {
 	         
 	    int[][] a = new int[row][col];
 	   
-	    ramdom2Chieu(a, row, col);
+	    ramdomArray2d(a, row, col);
 	    System.out.println("Ma tran ngau nhien ");
-	    out(a, row, col);
+	    disPlay(a, row, col);
 	    
+	    System.out.println("Phan tu lon nhat: "+ max(a, row, col));
 	    
-	    int k;
-	    do {
-	    	System.out.print("Nhap cot muon tinh tong: ");
-		    k = sc.nextInt();
-		    if (k >= row) 
-		    	System.out.print("Khong hop le!\n");
-	    }while (k >= row);
-	    
-	    
-	    System.out.println("Tong phan tu cua cot "+k+" la: " + tong(a, k, col));
-	    
-		
 	}
 }

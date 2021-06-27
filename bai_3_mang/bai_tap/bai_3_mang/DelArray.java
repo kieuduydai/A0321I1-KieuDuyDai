@@ -2,20 +2,20 @@ package bai_3_mang;
 
 import java.util.Scanner;
 
-public class xoa_pt {
-	public static void ramdom(int a[],int n) {
+public class DelArray {
+	public static void ramdomArray2d(int a[],int n) {
 		int i;
 		for(i = 0; i < n; i++)
 			a[i] = (int) (Math.random() * 100);
 	}
 	
-	public static void out(int a[],int n) {
+	public static void disPlay(int a[],int n) {
 		int i;
 		for(i = 0; i < n; i++)
 			System.out.print(a[i]+" ");
 	}
 	
-	public static void xoatPt(int a[],int n,int k)
+	public static void delete(int a[],int n,int k)
 	{	
 		int i,c,index;
 		boolean check = false;
@@ -31,7 +31,7 @@ public class xoa_pt {
 		n = c;
 		if(check) {
 			System.out.print("Mang sau khi xoa\n");
-			out(a, n);
+			disPlay(a, n);
 		}		
 		else 
 			System.out.print("\nKhong tim thay "+k+" trong mang");
@@ -46,13 +46,13 @@ public class xoa_pt {
 		int []a = new int [n];
 		
 		System.out.print("Mang ramdom la\n");
-		ramdom(a, n);
-		out(a, n);
+		ramdomArray2d(a, n);
+		disPlay(a, n);
 
 		System.out.print("\nNhap gia tri muon xoa:");
 		int k = sc.nextInt();
 		
-		xoatPt(a, n, k);
+		delete(a, n, k);
 		
 }
 }
