@@ -1,4 +1,4 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Date;
 public class SystemTime {
 	public static void main(String[] args) {

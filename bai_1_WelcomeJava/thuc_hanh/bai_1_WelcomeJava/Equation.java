@@ -1,6 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Scanner;
-public class pt_bac_nhat {
+
+public class Equation {
 	public static void main(String[] args) {
 		System.out.println("Phuong trinh a * x + b = c");
 		Scanner scanner = new Scanner(System.in);

@@ -1,7 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Scanner;
 
-public class doc_so {
+public class DocSo {
 	final static String[] ONES = {" "," ONE"," TWO"," THREE"," FOUR"," FIVE"," SIX",
 			" SEVEN"," EIGHT"," NINE"," TEN"," ELEVEN"," TWELVE"," THIRTEEN",
 			" FOURTEEN"," FIFTEEEN"," SEVENTEEN"," EIGHTTEEN"," NINETEEN"};

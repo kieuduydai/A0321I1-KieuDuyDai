@@ -1,6 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
+
 import java.util.Scanner;
-public class chi_so_can_nang {
+public class ChiSoCanNang {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		double weight, height, bmi;

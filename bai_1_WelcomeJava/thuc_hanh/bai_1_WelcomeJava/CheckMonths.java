@@ -1,6 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Scanner;
-public class so_ngay_trong_thang {
+
+public class CheckMonths {
 	public static void main(String[] args) {
 		int a;
 		Scanner scanner = new Scanner(System.in);

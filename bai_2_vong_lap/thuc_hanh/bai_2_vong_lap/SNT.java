@@ -1,6 +1,7 @@
 package bai_2_vong_lap;
 import java.util.Scanner;
-public class ktSNT {
+
+public class SNT {
 	
 	public static int isPrime(int number) {
 		int dem = 0;
@@ -9,6 +10,7 @@ public class ktSNT {
                 dem++;
         return dem;
 	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Nhap so can kiem tra: ");

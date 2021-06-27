@@ -1,7 +1,7 @@
 package bai_2_vong_lap;
 import java.util.Scanner;
 
-public class hien_thi_SNT {
+public class ShowIsPrime {
 	public static int isPrime(int number) {
 		int dem = 0;
 		for(int i = 1; i <= number; i++)

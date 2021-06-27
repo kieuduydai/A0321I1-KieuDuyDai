@@ -1,6 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Scanner;
-public class su_dung_toan_tu {
+
+public class SuDungToanTu {
 	public static void main(String[] args) {
         float width;
         float height;

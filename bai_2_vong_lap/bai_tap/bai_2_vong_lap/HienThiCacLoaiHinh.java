@@ -1,7 +1,7 @@
 package bai_2_vong_lap;
 import java.util.Scanner;
 
-public class hien_thi_cac_loai_hinh {
+public class HienThiCacLoaiHinh {
 	public static void menu(int choice) {
 		Scanner sc = new Scanner(System.in);
 		choice = -1;

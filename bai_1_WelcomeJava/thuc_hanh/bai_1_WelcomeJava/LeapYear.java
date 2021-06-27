@@ -1,6 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Scanner;
-public class nam_nhuan {
+
+public class LeapYear {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int year;

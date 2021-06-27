@@ -1,7 +1,7 @@
 package bai_2_vong_lap;
 import java.util.Scanner;
 
-public class tinh_tien_lai_cho_vay {
+public class TinhTienLai {
 	
 	public static double tienLai(double money, double interset_rate, int month) {
 		money = 1.0;

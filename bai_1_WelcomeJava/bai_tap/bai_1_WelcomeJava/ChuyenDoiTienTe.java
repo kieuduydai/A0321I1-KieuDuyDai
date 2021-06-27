@@ -1,6 +1,7 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 import java.util.Scanner;
-public class chuyen_doi_tien_te {
+
+public class ChuyenDoiTienTe {
 	public static void change(float vnd) {
 		System.out.printf("%-20s%s", "VND", "USD\n");
 		System.out.printf("%-20.2f%s", vnd, vnd / 23000);
@@ -12,4 +13,3 @@ public class chuyen_doi_tien_te {
 		change(vnd); 
 		} 
 	}
-

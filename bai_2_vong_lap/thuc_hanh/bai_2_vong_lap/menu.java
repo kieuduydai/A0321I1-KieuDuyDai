@@ -1,7 +1,7 @@
 package bai_2_vong_lap;
 import java.util.Scanner;
 
-public class menu {
+public class Menu {
 	
 	public static void menu(int choice) {
 		Scanner sc = new Scanner(System.in);

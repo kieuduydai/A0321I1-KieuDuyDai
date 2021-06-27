@@ -1,6 +1,6 @@
-package bai_1_Introduction_to_Java;
+package bai_1_WelcomeJava;
 
-public class khai_bao_va_su_dung_bien {
+public class Variables {
 	public static void main(String[] args) {
 		int i = 10;
 		float f = 20.5f;
@@ -16,3 +16,4 @@ public class khai_bao_va_su_dung_bien {
 		System.out.println("s = " + s);
 	}
 }
+
