@@ -21,7 +21,7 @@ public class FuramaController {
 			    	 int choice1 = -1;
 			    	 
 			    	 do {
-			    			System.out.println("1. Display list employees");
+			    			System.out.println("\n1. Display list employees");
 			    			System.out.println("2. Add new employee");
 			    			System.out.println("3. Edit employee");
 			    			System.out.println("4. Return main menu");
@@ -55,7 +55,7 @@ public class FuramaController {
 			    	 int choice2 = -1;
 			    	 
 			    	 do {
-			    			System.out.println("1. Display list customers");
+			    			System.out.println("\n1. Display list customers");
 			    			System.out.println("2. Add new customer");
 			    			System.out.println("3. Edit customer");
 			    			System.out.println("4. Return main menu");

@@ -15,12 +15,18 @@ public class Circle {
 		return this.radius;
 	}
 	
+	public double setRadius(double r){
+		return this.radius = r;
+	}
+	
+	
 	public double getArea(){
 		return this.radius*this.radius*Math.PI;
 	}
 	
 	public static void main(String[] args) {
-		Circle obj = new Circle(4);
+		Circle obj = new Circle();
+		obj.setRadius(5.55);
 		System.out.print("r = "+obj.getRadius());
 		System.out.print("\narea = "+obj.getArea());
 	}
