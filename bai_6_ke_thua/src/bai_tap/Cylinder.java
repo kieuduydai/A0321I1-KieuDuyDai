@@ -36,17 +36,6 @@ public class Cylinder extends Circle {
 				", which is a subclass of " + super.toString() + 
 				" and volume = " + getVolume() + " m3";
 	}
-	
-	public static void main(String[] args) {
-		Circle obj = new Circle(2,"red");
-		System.out.println(obj);
-		
-		Cylinder obj1 = new Cylinder(3,"green",5);
-		System.out.println(obj1);
-	}
-	
-	
-
 }
 
 class Circle {
