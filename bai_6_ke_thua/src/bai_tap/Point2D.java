@@ -29,7 +29,20 @@ public class Point2D {
 		this.y = y;
 	}
 	
+	public float [] getXY() {
+		float []array = new float [2];
+		array[0] = this.x;
+		array[1] = this.y;
+		return array;
+	}
+	
+	public void setXY(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
+	
 	public String toString() {
 		return "(x,y) = "+"("+ this.x + "," + this.y;
 	}
 }
+ 
