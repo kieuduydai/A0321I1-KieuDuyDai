@@ -1,7 +1,7 @@
 package bai_tap;
 
 public class MoveAblePoint extends Point {
-	private float xSpeed = 0.0f;
+    private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
 
 
