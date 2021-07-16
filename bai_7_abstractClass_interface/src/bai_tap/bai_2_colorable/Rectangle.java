@@ -1,5 +1,4 @@
 package bai_tap.bai_2_colorable;
-import thuc_hanh.bai_2_comparable.*;
 
 public class Rectangle extends Shape {
 	private double width = 1.0;
@@ -34,7 +33,7 @@ public class Rectangle extends Shape {
     public void setLength(double length) {
         this.length = length;
     }
-
+    @Override
     public double getArea() {
         return width * this.length;
     }
