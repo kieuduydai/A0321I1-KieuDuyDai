@@ -76,11 +76,11 @@ public class CircularQueue {
         enQueue(q,14);
         enQueue(q,22);
         enQueue(q,6);
-        //hiện phần tử
+        // Display queue
         displayQueue(q);
-        //xóa phần tử
+        // Delete
         System.out.println("\ndelete value "+deQueue(q));
-        //phần tử còn lại
+        // Phần tử sau khi xóa
         displayQueue(q);
         System.out.print("\n");
         enQueue(q,9);
